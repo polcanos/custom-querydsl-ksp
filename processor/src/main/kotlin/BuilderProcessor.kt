@@ -33,8 +33,8 @@ class BuilderProcessor(
             val className = "${parent.simpleName.asString()}Builder"
             val file =
                 codeGenerator.createNewFile(Dependencies(true, function.containingFile!!), packageName, className)
-            file.appendText("package $packageName\n\n")
-            file.appendText("import HELLO\n\n")
+//            file.appendText("package $packageName\n\n")
+//            file.appendText("import HELLO\n\n")
             file.appendText("class $className{\n")
             function.parameters.forEach {
                 val name = it.name!!.asString()

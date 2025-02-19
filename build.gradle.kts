@@ -1,21 +1,14 @@
 plugins {
-    kotlin("jvm") version "2.1.0"
+    kotlin("jvm")
 }
 
-group = "dev.polcanos"
-version = "1.0-SNAPSHOT"
-
-repositories {
-    mavenCentral()
+allprojects {
+    repositories {
+        mavenCentral()
+    }
 }
 
-dependencies {
-    testImplementation(kotlin("test"))
-}
-
-tasks.test {
-    useJUnitPlatform()
-}
 kotlin {
-    jvmToolchain(23)
+    jvmToolchain(17)
 }
+

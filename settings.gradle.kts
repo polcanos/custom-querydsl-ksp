@@ -14,3 +14,4 @@ pluginManagement {
 rootProject.name = "custom-querydsl-ksp"
 
 include(":processor")
+include(":workload")
